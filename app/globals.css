@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  @apply bg-abyss-950 font-sans text-ink antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  @apply bg-gold-400 text-abyss-950;
+}
+
+/* Readable 16px body text on phones (also stops iOS zooming into inputs) */
+@media (max-width: 767px) {
+  .text-sm {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+}
+
+/* Smooth micro-interactions on every interactive element */
+a,
+button,
+input,
+select,
+textarea {
+  transition-property: color, background-color, border-color, box-shadow,
+    transform, opacity;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #04070f;
+}
+::-webkit-scrollbar-thumb {
+  background: #16203a;
+  border-radius: 8px;
+  border: 2px solid #04070f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #22304f;
+}
+
+@layer components {
+  /* Frosted glass panel used for cards & the hero terminal */
+  .glass {
+    background: linear-gradient(
+      160deg,
+      rgba(255, 255, 255, 0.055),
+      rgba(255, 255, 255, 0.02)
+    );
+    border: 1px solid rgba(151, 166, 204, 0.14);
+    backdrop-filter: blur(14px);
+  }
+
+  /* Faint chart-paper grid, masked toward the top of sections */
+  .grid-bg {
+    background-image: linear-gradient(rgba(151, 166, 204, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(151, 166, 204, 0.05) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse 85% 65% at 50% 0%, black 25%, transparent 78%);
+    mask-image: radial-gradient(ellipse 85% 65% at 50% 0%, black 25%, transparent 78%);
+  }
+
+  /* Rotating lighthouse beam */
+  .beam {
+    position: absolute;
+    top: -34%;
+    right: -18%;
+    width: 92vmax;
+    height: 92vmax;
+    pointer-events: none;
+    background: conic-gradient(
+      from 212deg at 70% 24%,
+      transparent 0deg,
+      rgba(240, 184, 75, 0.09) 26deg,
+      transparent 52deg,
+      transparent 360deg
+    );
+    transform-origin: 70% 24%;
+    animation: sweep 46s linear infinite;
+  }
+  .beam--teal {
+    opacity: 0.7;
+    background: conic-gradient(
+      from 318deg at 70% 24%,
+      transparent 0deg,
+      rgba(63, 216, 193, 0.05) 34deg,
+      transparent 62deg,
+      transparent 360deg
+    );
+    animation-duration: 70s;
+    animation-direction: reverse;
+  }
+
+  /* Market ticker */
+  .ticker-mask {
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 7%, black 93%, transparent);
+    mask-image: linear-gradient(90deg, transparent, black 7%, black 93%, transparent);
+  }
+  .ticker-track {
+    animation: ticker 45s linear infinite;
+  }
+  .ticker-track:hover {
+    animation-play-state: paused;
+  }
+  @keyframes ticker {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Radar sweep disc */
+  .radar-sweep {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: conic-gradient(
+      from 0deg,
+      rgba(240, 184, 75, 0.32) 0deg,
+      rgba(240, 184, 75, 0.07) 42deg,
+      transparent 58deg
+    );
+    animation: radar 4.2s linear infinite;
+  }
+
+
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-[0.3em];
+  }
+
+  .hairline {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/30 hover:shadow-glow;
+  }
+}
+
+/* intl-tel-input — harbor dark theme */
+.iti {
+  --iti-border-color: rgba(151, 166, 204, 0.14);
+  --iti-hover-color: rgba(255, 255, 255, 0.06);
+  --iti-country-selector-bg: rgba(4, 7, 15, 0.5);
+  --iti-icon-color: #9aa8c7;
+  width: 100%;
+}
+.iti__country-list {
+  background: #0a1224;
+  border: 1px solid rgba(151, 166, 204, 0.14);
+  border-radius: 0.75rem;
+}
+.iti__country {
+  color: #eaf0fb;
+}
+.iti__country-name {
+  color: #9aa8c7;
+}
+.iti__selected-dial-code {
+  color: #eaf0fb;
+}
+.iti__search-input {
+  background: #070c1a;
+  color: #eaf0fb;
+  border: 1px solid rgba(151, 166, 204, 0.14);
+}
+.iti__search-input::placeholder {
+  color: rgba(154, 168, 199, 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .beam,
+  .beam--teal,
+  .ticker-track,
+  .radar-sweep,
+  .animate-float,
+  .animate-pulse-soft,
+  .animate-ping-slow {
+    animation: none !important;
+  }
+}
