@@ -22,10 +22,10 @@ const ITEMS: SecurityItem[] = [
     copy: (
       <>
         Every connection to Harborwyn uses 256-bit SSL encryption. It's{" "}
-        
+
           the same standard big banks rely on
-        
-        .
+
+        . Every message you send us gets the same protection.
       </>
     ),
     icon: (
@@ -96,10 +96,11 @@ const ITEMS: SecurityItem[] = [
       <>
         Our systems watch your account around the clock. If something looks
         odd,{" "}
-        
+
           you hear about it early
-        
-        , before it turns into a problem.
+
+        , before it turns into a problem. It all runs automatically in the
+        background.
       </>
     ),
     icon: (
@@ -148,9 +149,9 @@ export default function SecuritySection({ showHeading = true }: { showHeading?: 
             description={
               <>
                 You put real money on the line, so we protect it{" "}
-                
+
                   the way a bank protects its vault
-                
+
                 . Every account gets those same standards, on the free plan and
                 the paid one.
               </>

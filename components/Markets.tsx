@@ -120,9 +120,12 @@ export default function Markets({ showHeading = true }: { showHeading?: boolean 
 
         <Reveal delay={0.15}>
           <p className="mt-8 text-center text-sm text-mist">
-            That's 40+ markets in total. Crypto, equities, forex, commodities
+            That's 40+ markets in total, and counting. Crypto, equities, forex, commodities
             and precious metals, all covered around the clock, through bull
-            runs and bear markets alike.
+            runs and bear markets alike. New markets join the watchlist as they
+            prove themselves truly worthy of your time and attention. Every one of
+            them is watched by the same engine, so no market gets treated like
+            an afterthought. You can start with one market and grow from there.
           </p>
         </Reveal>
 

@@ -38,44 +38,14 @@ const HIGHLIGHTS = [
     ),
     icon: <path d="M13 3.5 L5.5 13.5 H11 L10 20.5 L18.5 10 H13 Z" />,
   },
-  {
-    title: "A Journal That Keeps Score",
-    copy: (
-      <>
-        You get every decision logged and reviewed each day, so you learn from
-        the market instead of just surviving it.
-      </>
-    ),
-    icon: (
-      <>
-        <path d="M19 4.5 H7 A2 2 0 0 0 5 6.5 V17.5 A2 2 0 0 0 7 19.5 H19 Z" />
-        <path d="M9 4.5 V19.5 M9 9 H15 M9 12.5 H15" />
-      </>
-    ),
-  },
-  {
-    title: "Proof Before You Risk It",
-    copy: (
-      <>
-        The Backtesting Lab replays ten years of market history. Your strategy
-        proves itself on paper before it ever meets real money.
-      </>
-    ),
-    icon: (
-      <>
-        <circle cx="12" cy="12" r="8.5" />
-        <path d="M12 7.5 V12 L15 14" />
-      </>
-    ),
-  },
 ];
 
-/** Long "meet the platform" narrative block, the intro to the homepage. */
+/** Two-column "meet the platform" intro, the homepage's first content block. */
 export default function AboutPlatform() {
   return (
     <section className="relative py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <div className="grid gap-14 lg:grid-cols-[1fr_1fr] lg:gap-20">
+        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1fr] lg:gap-16">
           <Reveal>
             <div>
               <p className="eyebrow flex items-center gap-3 text-gold-400">
@@ -89,53 +59,14 @@ export default function AboutPlatform() {
                 <p>
                   Harborwyn AI is a trading intelligence platform for people who
                   like to trade with their eyes open. You get signals, risk
-                  analytics, backtesting and portfolio tracking in one place.{" "}
-                  
-                    The tools do the heavy lifting
-                  
-                  , so you can focus on the decisions that matter.
-                </p>
-                <p>
+                  analytics, backtesting and portfolio tracking in one place.
                   The engine watches 40+ markets around the clock and turns a
-                  flood of data into a few setups worth your time. When it finds
-                  one,{" "}
-                  
-                    you get the why in plain words
-                  
-                  , clear for a beginner and sharp for a veteran.
+                  flood of data into a few setups worth your time.
                 </p>
                 <p>
                   Trust is earned, not claimed. So you connect with read-only
-                  keys,{" "}
-                  
-                    your capital stays in your own custody
-                  
-                  , and we never promise what we can't deliver. What you see on
-                  the dashboard is what you get, every day, every trade.
-                </p>
-                <p>
-                  Behind the calm interface sits a decade of trading scars,
-                  turned into engineering. The engine was trained on market
-                  history across every regime.
-                </p>
-                <p>
-                  It has seen bull runs, crashes and the long sideways
-                  stretches that quietly break most strategies. It knows a fake
-                  breakout when it sees one, because{" "}
-                  
-                    it has been wrong about thousands of them
-                  
-                  . That experience is priced into every signal you get.
-                </p>
-                <p>
-                  Maybe you're new to trading, or maybe you're a veteran who
-                  wants a sharper second opinion. Either way, Harborwyn meets
-                  you where you are. Start on the free plan, follow a few
-                  signals on paper, and{" "}
-                  
-                    let the platform prove itself to you
-                  
-                  , one explained trade at a time.
+                  keys, your capital stays in your own custody, and every
+                  signal comes with a reason in plain words.
                 </p>
               </div>
             </div>
@@ -149,12 +80,12 @@ export default function AboutPlatform() {
                   className="glass card-hover flex items-start gap-4 rounded-2xl p-6"
                 >
                   <span
-                    className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gold-400/20 bg-gold-400/10 text-teal"
+                    className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gold-400/20 bg-gold-400/10 text-teal"
                     aria-hidden="true"
                   >
                     <svg
                       viewBox="0 0 24 24"
-                      className="h-4 w-4"
+                      className="h-4.5 w-4.5"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="1.5"

@@ -10,7 +10,7 @@ const STEPS = [
         You sign up in under two minutes with your name, email and phone
         number. You don't need any trading experience, because{" "}
         
-          we guide you from day one
+          we guide you from day one. And the account is free to open, no card needed. Signing up takes less time than a good coffee.
         
         .
       </>
@@ -25,7 +25,7 @@ const STEPS = [
         
           Your funds stay in your own custody
         
-        , the whole time.
+        , the whole time. Connecting takes about two minutes.
       </>
     ),
   },
@@ -35,10 +35,10 @@ const STEPS = [
       <>
         You follow AI-generated signals with the entry, stop and target already
         attached. Or you switch on one-tap execution and{" "}
-        
+
           let the engine handle the clicks
-        
-        .
+
+        . You can paper trade first if you want to test the waters.
       </>
     ),
   },
@@ -65,9 +65,9 @@ export default function HowItWorks({ showHeading = true }: { showHeading?: boole
               <>
                 There's no onboarding maze here. Most traders get their first
                 signals{" "}
-                
+
                   within ten minutes of signing up
-                
+
                 .
               </>
             }

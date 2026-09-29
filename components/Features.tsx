@@ -106,32 +106,17 @@ export default function Features({ showHeading = true }: { showHeading?: boolean
                 </em>
               </>
             }
-            description={
-              <>
-                You don't need a pile of tabs, spreadsheets and gut feelings.
-                Harborwyn AI gives you{" "}
-                
-                  one calm command deck
-                
-                .
-              </>
-            }
           />
         )}
 
         {showHeading && (
           <Reveal delay={0.05}>
-            <p className="mx-auto mt-6 max-w-2xl text-center text-pretty text-sm leading-relaxed text-mist md:text-base">
-              Every part of the deck answers the same question.{" "}
-              
-                What should you do next?
-              
-            </p>
-            <p className="mx-auto mt-3 max-w-2xl text-center text-pretty text-sm leading-relaxed text-mist md:text-base">
-              The Signal Engine finds the setup, and the Risk Radar decides if
-              it deserves your money. The Backtesting Lab proves the plan, then
-              one-tap execution turns it into an order. Together they give you{" "}
-              one calm workflow.
+            <p className="mt-6 w-full text-center text-pretty text-sm leading-relaxed text-mist md:text-base">
+              Every part of the deck answers the same question. What should you
+              do next? The Signal Engine finds the setup, and the Risk Radar
+              decides if it deserves your money. The Backtesting Lab proves the
+              plan, then one-tap execution turns it into an order. Together
+              they give you one calm workflow.
             </p>
           </Reveal>
         )}

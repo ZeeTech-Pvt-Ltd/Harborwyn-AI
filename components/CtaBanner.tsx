@@ -28,11 +28,11 @@ export default function CtaBanner() {
               <p className="mx-auto mt-5 max-w-xl text-pretty text-mist md:text-lg">
                 Join 128,000+ traders navigating with Harborwyn AI. Your first
                 fourteen days come with{" "}
-                
+
                   full Captain access
-                
-                , no credit card and no fine print. So come see why traders call
-                it the lighthouse for the modern market.
+
+                , no credit card and no fine print. So come see why traders
+                call it the lighthouse for the modern market.
               </p>
 
               <div className="mt-9 flex flex-wrap items-center justify-center gap-4">

@@ -59,10 +59,12 @@ export default function Testimonials() {
             <>
               128,000+ traders across 70 countries navigate with Harborwyn AI
               every day. Here's what a few of them say{" "}
-              
-                in their own words
-              
-              , good, bad and lesson learned.
+
+                in their own honest words
+
+              , good, bad and lesson learned. Every single review comes from a real
+              account, shared with their permission. The slider rotates on its
+              own, so you can sit back and just read.
             </>
           }
         />

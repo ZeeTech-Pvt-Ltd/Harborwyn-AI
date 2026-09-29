@@ -25,40 +25,25 @@ export default function Performance() {
               </em>
             </>
           }
-          description={
-            <>
-              You can see how the Harborwyn Composite strategy held up through{" "}
-              
-                bull runs, crashes and sideways chop
-              
-              .
-            </>
-          }
         />
 
         <Reveal delay={0.05}>
-          <p className="mx-auto mt-6 max-w-2xl text-center text-pretty text-sm leading-relaxed text-mist md:text-base">
-            Performance is easy to promise and hard to prove. So we measure
-            Harborwyn the way you would,{" "}
-            
-              against the markets themselves
-            
-            .
+          <p className="mt-6 w-full text-center text-pretty text-sm leading-relaxed text-mist md:text-base">
+            You can see how the Harborwyn Composite strategy held up through
+            bull runs, crashes and sideways chop.
           </p>
-          <p className="mx-auto mt-3 max-w-2xl text-center text-pretty text-sm leading-relaxed text-mist md:text-base">
+          <p className="mt-3 w-full text-center text-pretty text-sm leading-relaxed text-mist md:text-base">
+            Performance is easy to promise and hard to prove. So we measure
+            Harborwyn the way you would, against the markets themselves.
+          </p>
+          <p className="mt-3 w-full text-center text-pretty text-sm leading-relaxed text-mist md:text-base">
             The Composite strategy below is replayed across nine years of
             history. That takes in bull runs, crashes and long sideways chop,
-            with{" "}
-            
-              fees, slippage and real drawdowns
-            {" "}
-            counted in.
+            with fees, slippage and real drawdowns counted in.
           </p>
-          <p className="mx-auto mt-3 max-w-2xl text-center text-pretty text-sm leading-relaxed text-mist md:text-base">
-            No cherry-picked windows. No survivorship tricks.{" "}
-            
-              Just the numbers as they happened.
-            
+          <p className="mt-3 w-full text-center text-pretty text-sm leading-relaxed text-mist md:text-base">
+            No cherry-picked windows. No survivorship tricks. Just the numbers
+            as they happened.
           </p>
         </Reveal>
 
